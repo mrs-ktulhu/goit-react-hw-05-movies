@@ -44,3 +44,14 @@ export const getMovieReviews = async (movieId) => {
     return [];
   }
 };
+
+export const searchMoviesByQuery = async (query) => {
+  try {
+    const response = await fetch(`${API_URL}/search/movie?api_key=${API_KEY}&query=${query}`);
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error('Error searching movies:', error);
+    return [];
+  }
+};
