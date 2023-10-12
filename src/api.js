@@ -33,3 +33,14 @@ export const getMovieCast = async (movieId) => {
     return [];
   }
 };
+
+export const getMovieReviews = async (movieId) => {
+  try {
+    const response = await fetch(`${API_URL}/movie/${movieId}/reviews?api_key=${API_KEY}`);
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error('Error fetching movie reviews:', error);
+    return [];
+  }
+};
