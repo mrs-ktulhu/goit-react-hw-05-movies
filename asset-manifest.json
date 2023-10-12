@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.b5320759.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.2705b808.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.359137ba.js",
+    "static/js/415.9500d6bf.chunk.js": "/goit-react-hw-05-movies/static/js/415.9500d6bf.chunk.js",
+    "static/js/134.ec140aa4.chunk.js": "/goit-react-hw-05-movies/static/js/134.ec140aa4.chunk.js",
+    "static/js/813.8f598a39.chunk.js": "/goit-react-hw-05-movies/static/js/813.8f598a39.chunk.js",
+    "static/js/597.6f5781b5.chunk.js": "/goit-react-hw-05-movies/static/js/597.6f5781b5.chunk.js",
+    "static/js/681.402d3817.chunk.js": "/goit-react-hw-05-movies/static/js/681.402d3817.chunk.js",
+    "static/js/364.cc0772fe.chunk.js": "/goit-react-hw-05-movies/static/js/364.cc0772fe.chunk.js",
+    "static/js/289.78daf2da.chunk.js": "/goit-react-hw-05-movies/static/js/289.78daf2da.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.b5320759.css.map": "/goit-react-hw-05-movies/static/css/main.b5320759.css.map",
-    "main.2705b808.js.map": "/goit-react-hw-05-movies/static/js/main.2705b808.js.map"
+    "main.359137ba.js.map": "/goit-react-hw-05-movies/static/js/main.359137ba.js.map",
+    "415.9500d6bf.chunk.js.map": "/goit-react-hw-05-movies/static/js/415.9500d6bf.chunk.js.map",
+    "134.ec140aa4.chunk.js.map": "/goit-react-hw-05-movies/static/js/134.ec140aa4.chunk.js.map",
+    "813.8f598a39.chunk.js.map": "/goit-react-hw-05-movies/static/js/813.8f598a39.chunk.js.map",
+    "597.6f5781b5.chunk.js.map": "/goit-react-hw-05-movies/static/js/597.6f5781b5.chunk.js.map",
+    "681.402d3817.chunk.js.map": "/goit-react-hw-05-movies/static/js/681.402d3817.chunk.js.map",
+    "364.cc0772fe.chunk.js.map": "/goit-react-hw-05-movies/static/js/364.cc0772fe.chunk.js.map",
+    "289.78daf2da.chunk.js.map": "/goit-react-hw-05-movies/static/js/289.78daf2da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.2705b808.js"
+    "static/js/main.359137ba.js"
   ]
 }
