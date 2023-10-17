@@ -1,7 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useLocation, NavLink, Link, Outlet } from 'react-router-dom';
+import {
+  useParams,
+  useLocation,
+  NavLink,
+  Link,
+  Outlet,
+} from 'react-router-dom';
 import { getMovieDetails } from 'api';
-import { Additionalnfo, Container, Image, InfoContainer, InfoList } from './MovieDetails.styled';
+import {
+  Additionalnfo,
+  Container,
+  Image,
+  InfoContainer,
+  InfoList,
+} from './MovieDetails.styled';
+
+const placeholderImage = 'https://via.placeholder.com/300x450?text=Movie+image';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -28,12 +42,10 @@ const MovieDetails = () => {
       <>
         {movie && (
           <Container>
-            <div>
-              <Image
-                src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+            <Image
+                src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : placeholderImage}
                 alt={movie.title}
               />
-            </div>
             <InfoContainer>
               <InfoList>
                 <h2>
@@ -46,10 +58,12 @@ const MovieDetails = () => {
                   <h3>Overviev</h3>
                   {movie.overview}
                 </li>
-                <li>
-                  <h4>Genres</h4>
-                  {movie.genres.map(genre => genre.name).join(', ')}
-                </li>
+                {movie.genres && movie.genres.length > 0 && (
+                  <li>
+                    <h4>Genres</h4>
+                    {movie.genres.map(genre => genre.name).join(', ')}
+                  </li>
+                )}
               </InfoList>
             </InfoContainer>
           </Container>
@@ -58,14 +72,14 @@ const MovieDetails = () => {
           <p>Additional information</p>
           <ul>
             <li>
-            <Link to="cast">Cast</Link>
+              <Link to="cast">Cast</Link>
             </li>
             <li>
-            <Link to="reviews">Reviews</Link>
+              <Link to="reviews">Reviews</Link>
             </li>
           </ul>
         </Additionalnfo>
-        <Outlet/>
+        <Outlet />
       </>
     </>
   );
